@@ -1,0 +1,24 @@
+1. Explain the different types of permissions you assigned (SELECT, INSERT, UPDATE, DELETE) and what each allows a user to do.
+
+SELECT - allows a user to read data from a table
+INSERT - allows a user to add new rows to a table
+UPDATE - allows a user to modify/update existing rows in a table
+DELETE - allows a user to remove rows from a table
+
+2. Describe the concept of schema-level permissions vs. table-level permissions.
+
+SCHEMA-LEVEL PERMISSION - this permission applies to all objects within the schema, allowing the users to act on any table in that schema.
+TABLE-LEVEL PERMISSION - this permission is specific to tables giving users control over actions for that table
+
+3. Explain how column-level permissions work and why they might be useful.
+
+Column-level permissions allows you to specify which columns in a table a user can access. It's useful for protecting sensitive data and ensuring users can only see the information necessary for their roles. Also, for complying with regulations like HIPAA.
+
+4. Discuss the principle of least privilege and how it's applied in this RBAC setup.
+
+The principle of least privilege is limiting the access rights of users to what is necessary to do their job. In an RBAC setup, this is applied by defining roles with minimum permissions
+ensuring access to what they need for the job.
+
+5. Explain the potential security benefits of using roles instead of assigning permissions directly to users.
+
+The security benefits of using roles create a structured approach to managing user access in the database environment. This includes reducing risk by limiting permissions, easier management through centralized control, ensuring consistency, and enhancing scalability as the organization grows. 
